@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.card-aluno {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  width: 500px;
+}
