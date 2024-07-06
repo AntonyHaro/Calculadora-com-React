@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #a0a0a0;
+  background-color: #a3a3a3;
   padding: 25px;
   border-radius: 35px;
   box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.507);
@@ -27,7 +27,7 @@ body {
 }
 
 .container:hover {
-  background-color: #b6b6b6;
+  background-color: #b3b3b3;
 }
 
 input {
