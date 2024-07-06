@@ -5,7 +5,7 @@ function App() {
     const [display, setDisplay] = useState("");
 
     const adicionar = (value) => {
-        setDisplay((prev) => prev + value); //o parametro prev é uma convenção de prévia, ele pega o estado anterior como prev
+        setDisplay((prev) => prev + value); //o parametro prev é uma convenção de prévia, ele pega o estado anterior da variavel
     };
 
     const calcular = () => {
