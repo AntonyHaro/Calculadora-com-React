@@ -25,6 +25,7 @@ function App() {
 
     const tocarSom = () => {
         const audio = new Audio("/sounds/clicar.mp3");
+        audio.volume = '0.2';
         audio.play();
     };
 
