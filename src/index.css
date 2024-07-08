@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -10,14 +9,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(340deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.315)) ;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    340deg,
+    rgba(0, 0, 0, 0.774),
+    rgba(0, 0, 0, 0.315)
+  );
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #a3a3a3;
   padding: 25px;
   border-radius: 35px;
@@ -31,10 +36,9 @@ body {
 
 input {
   width: 100%;
-  height: 7vh;
-  margin-bottom: 5vh;
-  padding: 20px;
-  text-align: end;
+  font-size: 1.2em;
+  padding: 12px;
+  text-align: right;
   border: 3px solid rgba(0, 0, 0, 0.6);
   border-bottom: 3px dashed rgba(0, 0, 0, 0.6);
   border-radius: 15px;
@@ -45,15 +49,17 @@ input:focus {
 }
 
 .buttons-grid {
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(5, 60px);
   grid-template-columns: repeat(4, 60px);
-  gap: 0.7vw;
-  width: 100%;
+  gap: 10px;
+  justify-content: center ;
+  margin-top: 5%;
 }
 
 button {
-  font-size: 1.2em;
+  font-size: 1.1em;
   border: none;
   border-radius: 15px;
   cursor: pointer;
