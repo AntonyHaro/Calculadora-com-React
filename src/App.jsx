@@ -5,10 +5,12 @@ function App() {
     const [display, setDisplay] = useState("");
 
     const adicionar = (value) => {
+        tocarSom();
         setDisplay((prev) => prev + value); //o parametro prev é uma convenção de prévia, ele pega o estado anterior da variavel
     };
 
     const calcular = () => {
+        tocarSom();
         try {
             setDisplay(eval(display).toString());
         } catch (error) {
@@ -17,7 +19,13 @@ function App() {
     };
 
     const limpar = () => {
+        tocarSom();
         setDisplay("");
+    };
+
+    const tocarSom = () => {
+        const audio = new Audio("/sounds/clicar.mp3");
+        audio.play();
     };
 
     return (
@@ -27,7 +35,7 @@ function App() {
                 <Botao valor="1" onClick={adicionar} />
                 <Botao valor="2" onClick={adicionar} />
                 <Botao valor="3" onClick={adicionar} />
-                <Botao valor="/" onClick={adicionar} operador={true}/>
+                <Botao valor="/" onClick={adicionar} operador={true} />
                 <Botao valor="4" onClick={adicionar} />
                 <Botao valor="5" onClick={adicionar} />
                 <Botao valor="6" onClick={adicionar} />

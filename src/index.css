@@ -36,8 +36,8 @@ input {
   margin-bottom: 35px;
   padding: 20px;
   text-align: end;
-  border: 2px solid rgba(0, 0, 0, 0.6);
-  border-bottom: 2px dashed rgba(0, 0, 0, 0.6);
+  border: 3px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 3px dashed rgba(0, 0, 0, 0.6);
   border-radius: 15px;
 }
 
