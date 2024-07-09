@@ -15,4 +15,4 @@ Este é um projeto de calculadora implementado com React, com o uso do recurso d
 É possível verificar a aplicação funcionando com o seguinte link: https://calculadora-com-react-pi.vercel.app/
 
 ---
-Divirta-se fazendo diversos cálculos matemáticos! ✏️✔️
+Divirta-se fazendo diversos cálculos matemáticos! 🔢📱 
