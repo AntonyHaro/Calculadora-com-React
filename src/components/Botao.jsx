@@ -1,28 +1,32 @@
 function Botao(props) {
     if (props.valor == "=") {
         return (
-            <button className="calcular operador" onClick={props.onClick}>
-                =
+            <button className="calcular" onClick={props.onClick}>
+                {props.valor}
             </button>
         );
     }
 
-    if (props.valor == "c") {
-        return <button className="clear" onClick={props.onClick}>C</button>;
-    }
-
-    if (props.valor == "*") {
+    if (props.valor == "C") {
         return (
-            <button
-                className="operador"
-                onClick={() => props.onClick(props.valor)}
-            >
-                x
+            <button className="clear" onClick={props.onClick}>
+                {props.valor}
             </button>
         );
     }
 
     if (props.operador) {
+        if (props.valor == "*") {
+            return (
+                <button
+                    className="operador"
+                    onClick={() => props.onClick(props.valor)}
+                >
+                    x
+                </button>
+            );
+        }
+
         return (
             <button
                 className="operador"

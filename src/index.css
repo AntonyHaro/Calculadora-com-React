@@ -20,6 +20,7 @@ body {
 
 .calculadora {
   background-color: #a3a3a3;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.507);
   max-width: 320px;
   display: flex;
   flex-direction: column;
@@ -27,7 +28,6 @@ body {
   align-items: center;
   padding: 25px;
   border-radius: 35px;
-  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.507);
   transition: 1s;
 }
 
@@ -40,9 +40,9 @@ input {
   font-size: 1.2em;
   padding: 12px;
   text-align: right;
-  border: 3px solid rgba(0, 0, 0, 0.6);
-  border-bottom: 3px dashed rgba(0, 0, 0, 0.6);
-  border-radius: 12px;
+  border: 3px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 3px dashed rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 }
 
 input:focus {
@@ -56,11 +56,12 @@ input:focus {
   gap: 10px;
   justify-items: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 button {
   background-color: #fff;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.295);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,13 +71,13 @@ button {
   border: none;
   border-radius: 50%;
   transition: 0.3s;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.295);
 }
 
 button:hover {
-  border-radius: 20px;
-  cursor: pointer;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.653);
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .operador {
@@ -85,15 +86,16 @@ button:hover {
 
 .operador:hover {
   background-color: #ff8800;
+  color: white;
 }
 
 .calcular {
-  border-radius: 20px;
-  /* grid-column: span 2; */
+  background-color: rgb(48, 155, 255);
 }
 
 .calcular:hover {
-  border-radius: 10px;
+  background-color: rgb(0, 132, 255);
+  color: white;
 }
 
 .clear {
@@ -102,5 +104,5 @@ button:hover {
 
 .clear:hover {
   background-color: #ff6060;
-
+  color: white;
 }

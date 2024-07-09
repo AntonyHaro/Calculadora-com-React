@@ -45,7 +45,7 @@ function App() {
                 <Botao valor="8" onClick={adicionar} />
                 <Botao valor="9" onClick={adicionar} />
                 <Botao valor="-" onClick={adicionar} operador={true} />
-                <Botao valor="c" onClick={limpar} />
+                <Botao valor="C" onClick={limpar} />
                 <Botao valor="0" onClick={adicionar} />
                 <Botao valor="." onClick={adicionar} />
                 <Botao valor="+" onClick={adicionar} operador={true} />
