@@ -25,12 +25,12 @@ function App() {
 
     const tocarSom = () => {
         const audio = new Audio("/sounds/clicar.mp3");
-        audio.volume = '0.2';
+        audio.volume = "0.2";
         audio.play();
     };
 
     return (
-        <div className="container">
+        <div className="calculadora">
             <input type="text" value={display} readOnly />
             <div className="buttons-grid">
                 <Botao valor="1" onClick={adicionar} />
