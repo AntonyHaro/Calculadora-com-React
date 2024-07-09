@@ -20,7 +20,7 @@ body {
 
 .calculadora {
   background-color: #a3a3a3;
-  max-width: 500px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +37,6 @@ body {
 
 input {
   width: 100%;
-  max-width: 400px;
   font-size: 1.2em;
   padding: 12px;
   text-align: right;
@@ -51,12 +50,12 @@ input:focus {
 }
 
 .buttons-grid {
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 60px);
   gap: 10px;
-  justify-content: center;
+  justify-items: center;
+  align-items: center;
   margin-top: 5%;
 }
 
@@ -90,7 +89,7 @@ button:hover {
 
 .calcular {
   border-radius: 20px;
-  grid-column: span 2;
+  /* grid-column: span 2; */
 }
 
 .calcular:hover {
