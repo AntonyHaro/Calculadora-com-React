@@ -20,7 +20,7 @@ function Botao(props) {
             return (
                 <button
                     className="operador"
-                    onClick={() => props.onClick(props.valor)}
+                    onClick={() => props.onClick(props.valor, true)}
                 >
                     x
                 </button>
@@ -30,7 +30,7 @@ function Botao(props) {
         return (
             <button
                 className="operador"
-                onClick={() => props.onClick(props.valor)}
+                onClick={() => props.onClick(props.valor, true)}
             >
                 {props.valor}
             </button>

@@ -4,9 +4,13 @@ import Botao from "./components/Botao";
 function App() {
     const [display, setDisplay] = useState("");
 
-    const adicionar = (value) => {
+    const adicionar = (valor, isOperador) => {
+        if (isOperador && display == "") {
+            return;
+        }
+
         tocarSom();
-        setDisplay((prev) => prev + value); //o parametro prev é uma convenção de prévia, ele pega o estado anterior da variavel
+        setDisplay((prev) => prev + valor);
     };
 
     const calcular = () => {
@@ -14,7 +18,7 @@ function App() {
         try {
             setDisplay(eval(display).toString());
         } catch (error) {
-            setDisplay("Erro");
+            setDisplay("Error");
         }
     };
 
