@@ -4,6 +4,12 @@ import Botao from "./components/Botao";
 function App() {
     const [display, setDisplay] = useState("");
 
+    const tocarSom = () => {
+        const audio = new Audio("/sounds/clicar.mp3");
+        audio.volume = "0.2";
+        audio.play();
+    };
+
     const adicionar = (valor, isOperador) => {
         if (isOperador && display == "") {
             return;
@@ -11,6 +17,11 @@ function App() {
 
         tocarSom();
         setDisplay((d) => d + valor);
+    };
+
+    const excluir = () => {
+        tocarSom();
+        setDisplay((d) => d.slice(0, -1));
     };
 
     const calcular = () => {
@@ -25,12 +36,6 @@ function App() {
     const limpar = () => {
         tocarSom();
         setDisplay("");
-    };
-
-    const tocarSom = () => {
-        const audio = new Audio("/sounds/clicar.mp3");
-        audio.volume = "0.2";
-        audio.play();
     };
 
     return (
@@ -54,6 +59,7 @@ function App() {
                 <Botao valor="." onClick={adicionar} />
                 <Botao valor="+" onClick={adicionar} isOperador={true} />
                 <Botao valor="=" onClick={calcular} />
+                <Botao valor="del" onClick={excluir} />
             </div>
         </div>
     );
