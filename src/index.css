@@ -1,7 +1,7 @@
 :root {
   --cor-primaria: hsl(220, 50%, 50%);
   --cor-secundaria: hsl(34, 100%, 55%);
-  --cor-terciaria: hsl(220, 30%, 30%);
+  --cor-terciaria: hsl(220, 52%, 10%);
   --cor-fundo: hsl(220, 30%, 55%);
   --cor-fundo-secundaria: hsl(220, 30%, 70%);
 }
@@ -11,6 +11,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "IBM Plex Mono", monospace;
+  color: var(--cor-terciaria);
+  font-weight: bold;
 }
 
 body {
@@ -24,7 +26,6 @@ body {
 
 .calculadora {
   background-color: var(--cor-fundo-secundaria);
-  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.507);
   min-width: 320px;
   display: flex;
   flex-direction: column;
@@ -32,6 +33,7 @@ body {
   align-items: center;
   padding: 1.5rem;
   border-radius: 25px;
+  border: 3px solid var(--cor-terciaria);
   transition: 1s;
 }
 
@@ -43,7 +45,6 @@ input {
   padding: 0.7rem;
   text-align: right;
   border: 3px solid var(--cor-terciaria);
-  border-bottom: 3px dashed var(--cor-terciaria);
   border-radius: 10px;
 }
 
@@ -57,7 +58,7 @@ input:focus {
   grid-template-columns: repeat(4, 60px);
   justify-content: center;
   gap: 0.6rem;
-  margin-top: 12%;
+  margin-top: 8%;
 }
 
 button {
@@ -68,12 +69,11 @@ button {
   font-size: 1.1em;
   border: none;
   border-radius: 50px;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.6);
+  border: 2px solid var(--cor-terciaria);
   transition: 0.2s;
 }
 
 button:hover {
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.75);
   border-radius: 15px;
   cursor: pointer;
   font-weight: bold;
@@ -89,6 +89,7 @@ button:hover {
 }
 
 .especial {
+  border-radius: 25px;
   grid-column: span 2;
   background-color: var(--cor-primaria);
 }
@@ -99,9 +100,9 @@ button:hover {
 }
 
 .del {
-  background-color: hsl(0, 100%, 65%);
+  background-color: hsl(0, 100%, 60%);
 }
 
 .del:hover {
-  background-color: hsl(0, 100%, 60%);
+  background-color: hsl(0, 100%, 55%);
 }
