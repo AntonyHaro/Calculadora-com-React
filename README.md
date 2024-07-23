@@ -12,7 +12,7 @@ Este é um projeto de calculadora implementado com React, com o uso do recurso d
 
 ## Aplicação em Vercel
 
-É possível verificar a aplicação funcionando com o seguinte link: https://calculadora-com-react-pi.vercel.app/
+É possível verificar a aplicação funcionando com o seguinte link: https://calculadora-com-react-gules.vercel.app/
 
 ---
 Divirta-se fazendo diversos cálculos matemáticos! 🔢📱 
