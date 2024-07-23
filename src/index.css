@@ -1,6 +1,6 @@
 :root {
-  --cor-primaria: hsl(220, 30%, 50%);
-  --cor-secundaria: hsl(34, 100%, 56%);
+  --cor-primaria: hsl(220, 50%, 50%);
+  --cor-secundaria: hsl(34, 100%, 64%);
   --cor-terciaria: hsl(220, 30%, 30%);
   --cor-fundo: hsl(220, 30%, 55%);
   --cor-fundo-secundaria: hsl(220, 30%, 70%);
@@ -40,7 +40,7 @@ input {
   color: var(--cor-terciaria);
   font-size: 1.2em;
   font-weight: bold;
-  padding: 12px;
+  padding: 0.7rem;
   text-align: right;
   border: 3px solid var(--cor-terciaria);
   border-bottom: 3px dashed var(--cor-terciaria);
@@ -83,23 +83,16 @@ button:hover {
 }
 
 .operador:hover {
+  background-color: hsl(34, 100%, 55%);
   color: white;
 }
 
-.calcular {
+.especial {
   grid-column: span 2;
   background-color: var(--cor-primaria);
 }
 
-.calcular:hover {
+.especial:hover {
   color: white;
-}
-
-.clear {
-  grid-column: span 2;
-  background-color: var(--cor-primaria);
-}
-
-.clear:hover {
-  color: white;
+  background-color: hsl(220, 70%, 50%)
 }

@@ -1,9 +1,9 @@
-function Botao({ valor, isOperador, onClick }) {
+function Botao({ valor, isOperador, isEspecial, onClick }) {
     return (
         <button
             className={`${isOperador ? "operador" : ""} ${
-                valor === "C" ? "clear" : ""
-            } ${valor === "=" ? "calcular" : ""}`}
+                isEspecial ? "especial" : ""
+            }`}
             onClick={() => onClick(valor, isOperador)}
         >
             {valor}

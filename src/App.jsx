@@ -42,7 +42,7 @@ function App() {
         <div className="calculadora">
             <input type="text" value={display} readOnly />
             <div className="buttons-grid">
-                <Botao valor="C" onClick={limpar} />
+                <Botao valor="C" onClick={limpar} isEspecial={true} />
                 <Botao valor="del" onClick={excluir} />
                 <Botao valor="/" onClick={adicionar} isOperador={true} />
                 <Botao valor="1" onClick={adicionar} />
@@ -59,7 +59,7 @@ function App() {
                 <Botao valor="*" onClick={adicionar} isOperador={true} />
                 <Botao valor="." onClick={adicionar} />
                 <Botao valor="0" onClick={adicionar} />
-                <Botao valor="=" onClick={calcular} />
+                <Botao valor="=" onClick={calcular} isEspecial={true} />
             </div>
         </div>
     );
