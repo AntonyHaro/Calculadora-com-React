@@ -42,24 +42,24 @@ function App() {
         <div className="calculadora">
             <input type="text" value={display} readOnly />
             <div className="buttons-grid">
+                <Botao valor="C" onClick={limpar} />
+                <Botao valor="del" onClick={excluir} />
+                <Botao valor="/" onClick={adicionar} isOperador={true} />
                 <Botao valor="1" onClick={adicionar} />
                 <Botao valor="2" onClick={adicionar} />
                 <Botao valor="3" onClick={adicionar} />
-                <Botao valor="/" onClick={adicionar} isOperador={true} />
+                <Botao valor="+" onClick={adicionar} isOperador={true} />
                 <Botao valor="4" onClick={adicionar} />
                 <Botao valor="5" onClick={adicionar} />
                 <Botao valor="6" onClick={adicionar} />
-                <Botao valor="*" onClick={adicionar} isOperador={true} />
+                <Botao valor="-" onClick={adicionar} isOperador={true} />
                 <Botao valor="7" onClick={adicionar} />
                 <Botao valor="8" onClick={adicionar} />
                 <Botao valor="9" onClick={adicionar} />
-                <Botao valor="-" onClick={adicionar} isOperador={true} />
-                <Botao valor="C" onClick={limpar} />
-                <Botao valor="0" onClick={adicionar} />
+                <Botao valor="*" onClick={adicionar} isOperador={true} />
                 <Botao valor="." onClick={adicionar} />
-                <Botao valor="+" onClick={adicionar} isOperador={true} />
+                <Botao valor="0" onClick={adicionar} />
                 <Botao valor="=" onClick={calcular} />
-                <Botao valor="del" onClick={excluir} />
             </div>
         </div>
     );

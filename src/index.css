@@ -1,3 +1,11 @@
+:root {
+  --cor-primaria: hsl(220, 30%, 50%);
+  --cor-secundaria: hsl(34, 100%, 56%);
+  --cor-terciaria: hsl(220, 30%, 30%);
+  --cor-fundo: hsl(220, 30%, 55%);
+  --cor-fundo-secundaria: hsl(220, 30%, 70%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,39 +19,31 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  background: linear-gradient(
-    350deg,
-    rgba(0, 0, 0, 0.774),
-    rgba(0, 0, 0, 0.315)
-  );
+  background-color: var(--cor-fundo);
 }
 
 .calculadora {
-  background-color: #a3a3a3;
+  background-color: var(--cor-fundo-secundaria);
   box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.507);
-  max-width: 320px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px;
-  border-radius: 35px;
+  padding: 2rem;
+  border-radius: 25px;
   transition: 1s;
-}
-
-.calculadora:hover {
-  background-color: #b8b8b8;
 }
 
 input {
   width: 100%;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--cor-terciaria);
   font-size: 1.2em;
   font-weight: bold;
   padding: 12px;
   text-align: right;
-  border: 3px solid rgba(0, 0, 0, 0.7);
-  border-bottom: 3px dashed rgba(0, 0, 0, 0.7);
+  border: 3px solid var(--cor-terciaria);
+  border-bottom: 3px dashed var(--cor-terciaria);
   border-radius: 10px;
 }
 
@@ -53,26 +53,22 @@ input:focus {
 
 .buttons-grid {
   display: grid;
-  grid-template-columns: repeat(4, 60px);
   grid-template-rows: repeat(5, 60px);
-  gap: 10px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 10%;
+  grid-template-columns: repeat(4, 60px);
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 12%;
 }
 
 button {
   background-color: #fff;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.295);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
   font-size: 1.1em;
   border: none;
-  border-radius: 50%;
-  transition: 0.3s;
+  border-radius: 50px;
+  transition: 0.2s;
 }
 
 button:hover {
@@ -83,28 +79,27 @@ button:hover {
 }
 
 .operador {
-  background-color: #ff9f31;
+  background-color: var(--cor-secundaria);
 }
 
 .operador:hover {
-  background-color: #ff8800;
   color: white;
 }
 
 .calcular {
-  background-color: rgb(48, 155, 255);
+  grid-column: span 2;
+  background-color: var(--cor-primaria);
 }
 
 .calcular:hover {
-  background-color: rgb(0, 132, 255);
   color: white;
 }
 
 .clear {
-  background-color: #ff7d7d;
+  grid-column: span 2;
+  background-color: var(--cor-primaria);
 }
 
 .clear:hover {
-  background-color: #ff6060;
   color: white;
 }
