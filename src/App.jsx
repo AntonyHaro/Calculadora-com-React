@@ -11,9 +11,7 @@ function App() {
     };
 
     const adicionar = (valor, isOperador) => {
-        if (isOperador && display == "") {
-            return;
-        }
+        if (display == "Error" || (isOperador && display == "")) return;
 
         tocarSom();
         setDisplay((d) => d + valor);
@@ -25,6 +23,8 @@ function App() {
     };
 
     const calcular = () => {
+        if (display == "" || display == "Error") return;
+
         tocarSom();
         try {
             setDisplay(eval(display).toString());
