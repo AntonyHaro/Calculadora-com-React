@@ -26,7 +26,7 @@ body {
 
 .calculadora {
   background-color: var(--cor-fundo-secundaria);
-  min-width: 320px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,14 +34,12 @@ body {
   padding: 1.5rem;
   border-radius: 25px;
   border: 3px solid var(--cor-terciaria);
-  transition: 1s;
 }
 
 input {
   width: 100%;
   color: var(--cor-terciaria);
   font-size: 1.2em;
-  font-weight: bold;
   padding: 0.7rem;
   text-align: right;
   border: 3px solid var(--cor-terciaria);
@@ -67,7 +65,6 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 1.1em;
-  border: none;
   border-radius: 50px;
   border: 2px solid var(--cor-terciaria);
   transition: 0.2s;
@@ -100,9 +97,10 @@ button:hover {
 }
 
 .del {
-  background-color: hsl(0, 100%, 60%);
+  background-color: hsl(0, 100%, %);
 }
 
 .del:hover {
-  background-color: hsl(0, 100%, 55%);
+  color: white;
+  background-color: hsl(0, 100%, 60%);
 }
