@@ -97,7 +97,7 @@ button:hover {
 }
 
 .del {
-  background-color: hsl(0, 100%, %);
+  background-color: hsl(0, 100%, 69%);
 }
 
 .del:hover {
